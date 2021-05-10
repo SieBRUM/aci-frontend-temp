@@ -14,7 +14,7 @@ import { InventoryPage } from './models/InventoryPage.model';
 })
 export class ApiService {
 
-  API_GATEWAY = 'https://localhost:44372/api/';
+  API_GATEWAY = 'https://aci-backend.azurewebsites.net/';
 
   constructor(private http: HttpClient) { }
 
