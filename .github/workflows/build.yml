@@ -20,8 +20,8 @@ jobs:
       run: npm install
     # - name: Lint
     #   run: npm run lint
-    # - name: Build
-    #   run: npm run build -- --prod
+    - name: Build
+      run: npm run build -- --prod
     - name: Install forever
       run: npm install forever -g
     - name: Start app
