@@ -25,6 +25,10 @@ jobs:
     - name: Install forever
       run: npm install forever -g
     - name: Start app
-      run: forever start node_modules/@angular/cli/bin/ng serve
+      run: forever start node_modules/@angular/cli/bin/ng serve 
+    - name: Sleep for 30 seconds (let the ng serve boot)
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '30s'
     - name: E2E
       run: npm run e2e:ci
