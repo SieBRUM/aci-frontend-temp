@@ -18,7 +18,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  /* GET calls */
+  /* GET calls  */
   getAllCategories(): Observable<HttpResponse<Array<ICategory>>> {
     return this.http.get<Array<ICategory>>(`${this.API_GATEWAY}category`, { observe: 'response' });
   }
