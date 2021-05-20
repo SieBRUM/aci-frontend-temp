@@ -14,7 +14,7 @@ import { InventoryPage } from './models/InventoryPage.model';
 })
 export class ApiService {
 
-  API_GATEWAY = 'https://localhost:44372/api/';
+  API_GATEWAY = 'http://145.220.75.145/api/';
 
   constructor(private http: HttpClient) { }
 
